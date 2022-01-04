@@ -66,7 +66,7 @@ To configure NS-3 in debug mode:
 After configuring NS-3, you can compile using the following command:
 
     ./waf
-
+### WARNING, if compiling outputs a constexpr error, replace the `static const double m_max_time_static = 1e-2;` line with `const double m_max_time_static = 1e-2;` in the `physim-propagation-loss-model.h` file in `ns3-ftca/build/ns3`.
 
 Usage
 -----
